@@ -23,7 +23,7 @@ const collisionCheck = (value) => {
   }
 };
 
-window.addEventListener("mousemove", (e) => {
+window.addEventListener("touchmove", (e) => {
   let check = e.target.classList.value;
   collisionCheck(check);
 });
