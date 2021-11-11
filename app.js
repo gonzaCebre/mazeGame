@@ -1,4 +1,5 @@
 const nextButton = document.querySelector(".next-button");
+const game = document.querySelector(".game");
 //svg mazes
 const levelOne = document.querySelector(".level-one");
 const levelTwo = document.querySelector(".level-two");
@@ -23,7 +24,7 @@ const collisionCheck = (value) => {
   }
 };
 
-window.addEventListener("touchmove", (e) => {
+game.addEventListener("touchmove", (e) => {
   let check = e.target.classList.value;
   collisionCheck(check);
 });
